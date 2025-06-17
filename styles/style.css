@@ -6,6 +6,7 @@
 }
 
 .header__menu {
+  font-size: 18px;
   justify-self: start;
 }
 
@@ -21,25 +22,15 @@
   list-style-type: circle;
 }
 
-.header__link {
+.address__link {
   color: inherit;
-  text-decoration: none;
   font-size: 18px;
+  text-decoration: underline;
   text-underline-offset: 4px;
 }
 
 .header__link:hover {
   opacity: 0.8;
-}
-
-.link-lots {
-  position: relative;
-  left: 2px;
-}
-
-.link-about {
-  position: relative;
-  left: 7px;
 }
 
 .header__logo {
@@ -53,37 +44,27 @@
   width: 100%;
 }
 
-.header__address {
+.address {
   font-style: normal;
-  width: 240px;
-  justify-self: end;
+  font-size: 18px;
   line-height: 1.5;
 }
 
+.header__address {
+  width: 240px;
+  justify-self: end;
+}
+
 .header__address .header__link:first-of-type {
-  position: relative;
-  top: -1px;
+  margin-top: 0px;
 }
 
 .header__address .header__link:nth-of-type(2) {
-  position: relative;
-  top: -3px;
-}
-
-.header__address-location {
-  letter-spacing: 1px;
-  display: inline-block;
-  position: relative;
-  left: 2px;
-  top: -4px;
+  margin-top: 0px;
 }
 
 .header__links-list-item_no-bullit {
   list-style: none;
-}
-
-.header__link_underline {
-  text-decoration: underline;
 }
 
 .header__address a {
@@ -91,9 +72,12 @@
   text-underline-offset: 4px;
 }
 
+.header__link_active {
+  text-decoration: none;
+}
+
 nav {
-  position: relative;
-  top: -2px;
+  margin-top: 0px;
 }
 
 nav ul {
@@ -153,8 +137,7 @@ nav ul li.main-link {
 
 .aligned-text_right {
   text-align: right;
-  position: relative;
-  right: -30px;
+  padding-left: 613px;
 }
 
 .letter-spacing-extended {
@@ -253,7 +236,7 @@ nav ul li.main-link {
   z-index: 2;
   position: relative;
   text-transform: uppercase;
-  font-weight: 525;
+  font-weight: 700;
 }
 
 .card__text {
@@ -263,13 +246,6 @@ nav ul li.main-link {
   line-height: 1.2;
   margin-top: auto;
   font-weight: 400;
-}
-
-.card__text em {
-  font-style: normal;
-  transform: scaleX(0.8);
-  letter-spacing: -2px;
-  display: inline-block;
 }
 
 .card_type_film {
@@ -295,15 +271,16 @@ nav ul li.main-link {
 
 .about {
   margin: 120px 0 180px 0;
-  padding: 40px 24px 0;
+  padding: 35px 16px 0px 16px;
   background-color: #ffffff;
 }
 
 .about__grid {
   display: grid;
-  grid-template-columns: 350px 1fr;
-  grid-template-rows: auto 1fr;
-  gap: 20px;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: auto 3fr;
+  row-gap: 9px;
+  column-gap: 22px;
 }
 
 .about__column {
@@ -317,7 +294,7 @@ nav ul li.main-link {
   display: flex;
   justify-content: center;
   align-items: center;
-  transform: translateY(-6px) translateX(-8px);
+  padding-left: 4px;
 }
 
 .about__logo {
@@ -328,13 +305,11 @@ nav ul li.main-link {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-bottom: 20px;
 }
 
 .about__logo-image {
   width: 148px;
   height: 114px;
-  transform: translateY(1px);
 }
 
 .about__column_title {
@@ -342,32 +317,29 @@ nav ul li.main-link {
   grid-row: 1 / 2;
   display: flex;
   align-items: center;
+  padding: 32px 0px 0 4px;
 }
 
 .about__title {
   font-size: 40px;
   text-transform: uppercase;
-  margin: 0;
-  position: relative;
-  left: -10px;
-  top: -11px;
+  padding-bottom: 30px;
 }
 
 .about__column_text {
-  grid-column: 2 / 3;
+  grid-column: 2 / 4;
   grid-row: 2 / 3;
+  padding-left: 4px;
 }
 
 .about__paragraph {
   font-size: 20px;
   line-height: 1.2;
-  margin-top: 0;
-  margin-bottom: 0;
-  transform: translateX(-11px) translateY(-37px);
+  margin-bottom: 20px;
 }
 
-.about__paragraph_first {
-  margin-bottom: 22px;
+.about__paragraph:last-child {
+  margin-bottom: 0;
 }
 
 .footer {
@@ -381,11 +353,7 @@ nav ul li.main-link {
 }
 
 .footer__address {
-  font-size: 18px;
-  font-style: normal;
-  line-height: 1.3;
   margin: 0 0 82px;
-  transform: translateY(-34px);
 }
 
 .footer__address a {
@@ -402,8 +370,8 @@ nav ul li.main-link {
   flex-direction: column;
   gap: 0px;
   align-items: center;
-  transform: translateX(-25px) translateY(-33px);
   line-height: 1.3;
+  margin-right: 45px;
 }
 
 .footer__menu-link {
@@ -422,10 +390,6 @@ nav ul li.main-link {
   text-decoration: none;
 }
 
-.footer__menu-list-item:nth-child(2) {
-  margin-top: -3px;
-}
-
 .footer__social-list {
   list-style: none;
   padding: 0;
@@ -433,13 +397,10 @@ nav ul li.main-link {
   display: flex;
   justify-content: flex-end;
   gap: 50px;
-  transform: translateX(2px) translateY(-35px);
 }
 
 .footer__social-link {
   display: block;
-  width: 48px;
-  height: 48px;
   transition: opacity 0.3s;
 }
 
@@ -449,6 +410,6 @@ nav ul li.main-link {
 
 .footer__social-icon {
   display: block;
-  width: 100%;
-  height: 100%;
+  width: 48px;
+  height: 48px;
 }

@@ -15,15 +15,15 @@
       <nav class="header__menu">
         <ul class="header__links-list">
           <li class="header__links-list-item header__links-list-item_no-bullit">
-            <a class="header__link" href="#cover">главная</a>
+            <a class="header__link header__link_active" href="#cover">главная</a>
           </li>
-          <li class="header__links-list-item link-lots">
-            <a class="header__link header__link_underline" href="#lots"
+          <li class="header__links-list-item">
+            <a class="header__link" href="#lots"
               >посмотреть лоты</a
             >
           </li>
-          <li class="header__links-list-item link-about">
-            <a class="header__link header__link_underline" href="#about"
+          <li class="header__links-list-item">
+            <a class="header__link" href="#about"
               >об аукционе</a
             >
           </li>
@@ -38,14 +38,13 @@
         />
       </a>
 
-      <address class="header__address">
-        <a class="header__link" href="tel:+99995555555">+9 999 555 5555</a
+      <address class="address header__address">
+        <a class="address__link" href="tel:+99995555555">+9 999 555 5555</a
         ><br />
-        <a class="header__link" href="mailto:info@sobaka.ge">info@sobaka.ge</a
+        <a class="address__link" href="mailto:info@sobaka.ge">info@sobaka.ge</a
         ><br />
-        <span class="header__address-location"
-          >наб. Принсенграхт 263–<br />265, Амстердам</span
-        >
+        наб. Принсенграхт 263– <br /> 265, Амстердам
+        <br />
       </address>
     </header>
 
@@ -54,22 +53,22 @@
         <!-- первая секция -->
         <div class="overlay"></div>
         <h1 class="cover__title letter-spacing-extended">
-          <span class="aligned-text">ОНО</span>
-          <span class="aligned-text aligned-text_center">ТЕБЕ</span>
-          <span class="aligned-text aligned-text_right">НАДО</span>
+          <span class="aligned-text">Оно</span>
+          <span class="aligned-text aligned-text_center">Тебе</span>
+          <span class="aligned-text aligned-text_right">Надо</span>
         </h1>
 
         <div class="cover__description">
           <p class="cover__description-text">
             Аукцион вещей, в которые никто не верил
           </p>
-          <button class="bet-button">Сделать ставку</button>
+          <button class="bet-button" type="button">Сделать ставку</button>
         </div>
       </section>
 
       <section id="lots" class="lots">
         <!-- лоты -->
-        <h2 class="lots__heading">ЛОТЫ</h2>
+        <h2 class="lots__heading">Лоты</h2>
         <ul class="lots__card-list">
           <li class="lots__card-list-item">
             <a class="card-link" href="#">
@@ -115,7 +114,7 @@
                   Ну действительно, там линия, тут кружочек, а здесь и вовсе
                   что-то похожее на инфузорию-туфельку. Никаких полей, лесов,
                   котиков... Сколько бы вы на такое поставили, если бы не знали,
-                  что это <em>—</em> одна из революционных работ Кандинского?
+                  что это — одна из революционных работ Кандинского?
                 </p>
               </article>
             </a>
@@ -141,10 +140,8 @@
               <h2 class="about__title">Об аукционе</h2>
             </div>
 
-            <div class="about__column"></div>
-
-            <div class="about__column about__text">
-              <p class="about__paragraph about__paragraph_first">
+            <div class="about__column about__column_text">
+              <p class="about__paragraph">
                 Здесь вы не встретите очередное пафосное собрание невероятно
                 дорогого антиквариата. Наши лоты вообще не должны были попасть
                 ни на один аукцион. Потому что кому нужен дневник
@@ -168,9 +165,11 @@
 
     <footer class="footer">
       
-      <address class="footer__address">
-        +9 999 555 5555<br />
-        <a href="mailto:info@sobaka.ge">info@sobaka.ge</a><br />
+      <address class="address footer__address">
+        <a class="address__link" href="tel:+99995555555">+9 999 555 5555</a
+        ><br />
+        <a class="address__link" href="mailto:info@sobaka.ge">info@sobaka.ge</a
+        ><br />
         наб. Принсенграхт 263–265, <br />Амстердам<br />
       </address>
 
