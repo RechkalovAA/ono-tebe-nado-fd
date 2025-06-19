@@ -87,11 +87,6 @@ nav ul {
   list-style: circle;
 }
 
-nav ul li.main-link {
-  list-style: none;
-  text-decoration: none;
-}
-
 .cover {
   margin-bottom: 180px;
   padding: 40px 24px;
